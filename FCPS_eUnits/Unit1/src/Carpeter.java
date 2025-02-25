@@ -13,14 +13,24 @@
       }
       public void workCorner()
       {
+    	  if (!nextToABeeper()) {
+    		  putBeeper();
+    	  }
       }
       public void moveOneBlock()
       {
+    	  move();
       }
       public void turnToTheRight()
       {
+    	  turnLeft();
+    	  turnLeft();
+    	  turnLeft();
       }
       public void turnToTheNorth()
       {
+    	  if (!facingNorth()) {
+    		  turnLeft();
+    	  }
       }
    }

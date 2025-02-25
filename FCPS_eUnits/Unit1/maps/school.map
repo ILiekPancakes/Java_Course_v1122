@@ -5,10 +5,11 @@
   <objects>
     <beeper x='8' y='9' num='3'/>
     <beeper x='7' y='9' num='3'/>
-    <beeper x='4' y='9' num='2'/>
+    <beeper x='4' y='9' num='7'/>
     <beeper x='3' y='9' num='3'/>
     <beeper x='2' y='9' num='3'/>
     <beeper x='2' y='2' num='1'/>
+    <beeper x='4' y='5' num='1'/>
     <wall x='4' y='3' length='1' style='horizontal'/>
     <wall x='3' y='3' length='1' style='horizontal'/>
     <wall x='7' y='6' length='1' style='horizontal'/>
