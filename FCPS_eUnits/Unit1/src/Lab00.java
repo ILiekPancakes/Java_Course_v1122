@@ -5,7 +5,7 @@ public class Lab00 {
 	
 	public static void main(String[] args) {
 		
-		Display.openWorld("maps/first.map");
+		Display.openWorld("../maps/first.map");
 		Display.setSize(10, 10);
 		Display.setSpeed(5);
 		

@@ -1,4 +1,4 @@
-	//Name______________________________ Date_____________
+package Lab08;
    import edu.fcps.Turtle;
    import java.awt.Color;
    public class FlowerTurtle extends Turtle
@@ -27,22 +27,37 @@
       private void drawPetals() //starts and ends at center facing north
       {
       
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
+         super.setColor(myColor);
+         double interiorAngle = 360/30;
+         
+         for(int i=0; i<30; i++) {
+        	 forward(mySize);
+        	 turnLeft(180);
+        	 forward(mySize);
+        	 turnLeft(180+interiorAngle);
+         }
+         
       
       }
       private void drawStem() //starts at top of stem facing south, ends at bottom
       {
-      
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
-      
+    	  this.turnLeft(180);
+    	  this.forward(mySize * 1);
+    	  setColor(Color.green);
+    	  super.setColor(myColor);
+    	  this.forward(mySize * 1.5);    	  
+    	  this.turnLeft(180);
+    	  this.forward(mySize * 0.5);
+    	  this.turnLeft(45);
+    	  this.forward(mySize * 0.5);
+    	  this.turnLeft(180);
+    	  this.forward(mySize * 0.5);
+    	  this.turnLeft(90);
+    	  this.forward(mySize * 1);
+    	  this.turnLeft(180);
+    	  this.forward(mySize * 1);
+    	  this.turnRight(135);
+    	  this.forward(mySize * 1);
       }
       public void drawShape()
       {

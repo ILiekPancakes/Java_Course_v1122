@@ -1,4 +1,4 @@
-   //Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
+package Lab04;
 	//version 6.17.2003
 
    import edu.fcps.Bucket;

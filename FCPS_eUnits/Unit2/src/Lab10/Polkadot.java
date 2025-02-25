@@ -1,4 +1,4 @@
-// Billington.  email: mlbillington@fcps.edu
+ package Lab10;
 // version: 7.25.2007
 // updated by Phil Ero 16NOV07
 
@@ -35,15 +35,15 @@
       }
       public double getY()      
       { 
-         //_______________
+         return myY;
       }
       public double getDiameter() 
       { 
-         //_______________
+         return myDiameter;
       }
       public Color getColor() 
       { 
-         //_______________
+         return myColor;
       }
       public double getRadius() 
       { 
@@ -54,9 +54,9 @@
       {
          myX = x;
       } 
-      public void setY(/*_________*/)
+      public void setY(double y)
       {
-         //_______________
+         myY = y;
       } 
       public void setColor(Color c)
       {

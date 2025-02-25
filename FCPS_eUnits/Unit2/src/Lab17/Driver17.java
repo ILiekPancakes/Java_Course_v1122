@@ -1,6 +1,7 @@
-	// Torbert, 7.20.06
+package Lab17;
 
    import javax.swing.JFrame;
+
     public class Driver17
    {
        public static void main(String[] args)

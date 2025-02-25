@@ -1,5 +1,7 @@
-//Name:              Date:
+package Lab11;
    import java.awt.*;
+
+import Lab10.Polkadot;
     public class Ball extends Polkadot
    {
       private double dx;       // pixels to move each time step() is called.
@@ -15,7 +17,7 @@
       {
          super(x, y, dia, c);
          dx = Math.random()* 12 - 6;
-         dy = Math.random() * 12 - 6;
+         dy = Math.random()* 12 - 6;
       }
       
      //modifier methods 
@@ -42,14 +44,31 @@
        public void move(double rightEdge, double bottomEdge)
       {
          setX(getX()+ dx);                    // x = x + dx
-        
+         setY(getY()+dy);
         // check for left & right edge bounces
          if(getX() >= rightEdge - getRadius())     //hits the right edge
          {
             setX(rightEdge - getRadius());
             dx = dx * -1; 
          }
-         else if 
+         
+         if(getX() <= getRadius())     //hits the left edge
+         {
+            setX(getRadius());
+            dx = dx * -1; 
+         }
+         
+         if(getY() >= bottomEdge - getRadius()) {
+        	 setY(bottomEdge - getRadius());
+        	 dy= dy * -1;
+         }
+         
+         if(getY() <= getRadius()) {
+        	 setY(getRadius());
+        	 dy= dy * -1;
+         }
+         
+         
          
       }
    }

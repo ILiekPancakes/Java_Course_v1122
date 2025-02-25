@@ -1,4 +1,4 @@
-	//Name______________________________ Date_____________
+package Lab06;
    import edu.fcps.Turtle;
    import java.awt.Color;
    import javax.swing.*;
@@ -19,12 +19,25 @@
          smidge.setColor(Color.BLUE);
          smidge.setThickness(6);
          smidge.drawShape();
+         
+         smidge.setSize(100);
+         smidge.drawShape();
+         
+         smidge = new SquareTurtle(100, 250, 135, 30);
+         smidge.setColor(Color.red);
+         smidge.setThickness(6);
+         smidge.drawShape();
       
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
+         SquareTurtle smudge = new SquareTurtle(600, 250, 135);
+         smudge.setColor(Color.red);
+         smudge.setThickness(6);
+         
+         int size = 15;
+         for(int i=0; i <= 4; i++) {
+        	 smudge.setSize(size*i);
+        	 smudge.drawShape();
+         }
+         
       
       }
    }
