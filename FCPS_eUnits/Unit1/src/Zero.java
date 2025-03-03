@@ -1,6 +1,6 @@
 import edu.fcps.Digit;
 
-public class Zero extends Digit implements Runnable {
+public class Zero extends Digit {
 
 	public Zero(int x, int y) {
 		super(x, y);
@@ -8,7 +8,7 @@ public class Zero extends Digit implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public void display() {
 		segment1_On();
 		segment2_On();
 		segment3_On();

@@ -15,7 +15,7 @@ public class Lab04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Display.openWorld(".../maps/arena.map");
+		Display.openWorld("maps/arena.map");
 		Display.setSize(10,10);
 		Athlete athlete1 = new Athlete();
 		Athlete athlete2 = new Athlete();

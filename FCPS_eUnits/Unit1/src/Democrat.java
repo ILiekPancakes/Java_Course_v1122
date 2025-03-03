@@ -3,7 +3,7 @@ public class Democrat extends MazeEscaper {
 
 	@Override
 	public void walkDownCurrentSegment() {
-		if (!leftIsClear() && frontIsClear()) {
+		if (!leftIsClear() && frontIsClear() && !nextToABeeper()) {
 			move();
 		}
 

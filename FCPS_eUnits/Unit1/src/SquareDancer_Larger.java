@@ -16,6 +16,7 @@ public class SquareDancer_Larger extends Dancer {
 			move();
 			move();
 			move();
+         move();
 			turnLeft();
 		}
 

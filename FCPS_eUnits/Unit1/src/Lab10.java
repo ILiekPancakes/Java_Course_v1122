@@ -3,7 +3,7 @@ import edu.fcps.karel2.Display;
 public class Lab10 {
 
 	public static void main(String[] args) {
-		Display.openWorld("maps/maze9r.map");
+		Display.openWorld("../maps/maze1.map");
 		Display.setSize(10,10);
 		Display.setSpeed(10);
 		Athlete pete = new Athlete(1,1,Display.NORTH,Display.INFINITY);

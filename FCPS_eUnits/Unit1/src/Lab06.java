@@ -7,7 +7,7 @@
        public static void main(String[] args) 	
       {
          String filename = JOptionPane.showInputDialog("What robot world?");
-         Display.openWorld("maps/" + filename + ".map");
+         Display.openWorld("../maps/" + filename + ".map");
          Display.setSize(10, 10);
          Display.setSpeed(10);
       
