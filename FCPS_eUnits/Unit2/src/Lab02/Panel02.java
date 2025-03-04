@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class Panel02 extends JPanel {
 	public void paintComponent(Graphics g) {
-		g.setColor(Color.blue.darker());
+		g.setColor(Color.blue.darker  ());
 		g.fillRect(0, 0, 400, 400);
 		
 		g.setColor(Color.yellow);

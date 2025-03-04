@@ -28,14 +28,11 @@ package Lab06;
          smidge.setThickness(6);
          smidge.drawShape();
       
-         SquareTurtle smudge = new SquareTurtle(600, 250, 135);
-         smudge.setColor(Color.red);
-         smudge.setThickness(6);
-         
-         int size = 15;
-         for(int i=0; i <= 4; i++) {
-        	 smudge.setSize(size*i);
-        	 smudge.drawShape();
+         for(int i=30;i<=150;i+=30){
+         smidge = new SquareTurtle(500,250,45,i);
+         smidge.setColor(Color.yellow);
+         smidge.setThickness(2);
+         smidge.drawShape();
          }
          
       
