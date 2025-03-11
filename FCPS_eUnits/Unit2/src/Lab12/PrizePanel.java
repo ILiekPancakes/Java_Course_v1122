@@ -18,7 +18,7 @@ import java.awt.*;
       private Ball ball;
       private Polkadot pd;
       private Timer t; 
-      private int hits = -1;
+      private int hits = 0;
       private int dia = 30;
 		//constructor   
        public PrizePanel()

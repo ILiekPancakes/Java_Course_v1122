@@ -1,26 +1,24 @@
-	package Lab07;
+package Lab07;	
+//Name______________________________ Date_____________
    import edu.fcps.Turtle;
     public class PolygonTurtle extends Turtle
    {
       private double mySize;
       private int mySides;
-      private int myDeg;
        public PolygonTurtle()
       {
          super();
          mySize = 50.0;
          mySides = 6;
       }
-       public PolygonTurtle(double n, int s, int d)
+       public PolygonTurtle(double n, int s)
       {
-    	 myDeg = d;
          mySize = n;
          mySides = s;
       }
-       public PolygonTurtle(double x, double y, double h, double n, int s, int d)
+       public PolygonTurtle(double x, double y, double h, double n, int s)
       {
          super(x, y, h);
-         myDeg = d;
          mySize = n;
          mySides = s;
       }
@@ -32,29 +30,25 @@
       {
          mySides = s;
       }
-       
-       public void setDeg(int d)
-       {
-          myDeg += d;
-       }
-       
-       public void drawShape()
+      
+	@Override
+	public void drawShape() {
+         for (int k = 1; k <= mySides; k++) {  
+        		 forward(mySize);
+        		 turnLeft(360 / mySides);
+         }
+	}
+   
+    public void drawShape(int s)
       {
-    
-    	   for(int i=0; i<mySides; i++) {
-    		   this.forward(mySize);
-    		   this.turnLeft(myDeg);
-    	   }
+         for (int i = 3; i <= s; i++) {  
+        	 for (int k = 0; k < i; k++) {
+        		 forward(mySize);
+        		 turnLeft(360 / i);
+        		 
+        	 }
+         }
       
       }
-       
-       public void drawShape1()
-       {
-    	   this.turnLeft(105);
-     	   for(int i=0; i<mySides; i++) {
-     		   this.forward(mySize);
-     		   this.turnLeft(myDeg);
-     	   }
-       
-       }
+
    }

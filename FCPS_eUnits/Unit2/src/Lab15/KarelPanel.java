@@ -19,10 +19,10 @@ package Lab15;
          myImage =  new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
          myBuffer = myImage.getGraphics();
          myArray = new ImageIcon[4];
-         myArray[0] = new ImageIcon("src\\Lab15\\karele.gif");   //east
-         myArray[1] = new ImageIcon("src\\Lab15\\kareln.gif");   //north
-         myArray[2] = new ImageIcon("src\\Lab15\\karelw.gif");   //west
-         myArray[3] = new ImageIcon("src\\Lab15\\karels.gif");   //south
+         myArray[0] = new ImageIcon("../src/Lab15/karele.gif");   //east
+         myArray[1] = new ImageIcon("../src/Lab15/kareln.gif");   //north
+         myArray[2] = new ImageIcon("../src/Lab15/karelw.gif");   //west
+         myArray[3] = new ImageIcon("../src/Lab15/karels.gif");   //south
          dir = 0;     //start facing east
          xPos = 5;    //starting xPos
          yPos = HEIGHT - 3 - myArray[dir].getImage().getHeight(null); //starting yPos

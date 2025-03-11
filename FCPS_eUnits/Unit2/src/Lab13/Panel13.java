@@ -12,7 +12,7 @@ import java.awt.Font;
 import java.awt.event.KeyEvent;
 public class Panel13 extends JPanel {
 
-	private static final ImageIcon Thomas = new ImageIcon("src/Lab02/tj.jpg");
+	private static final ImageIcon Thomas = new ImageIcon("../Unit2/src/Lab02/tj.jpg");
 	private BufferedImage myImage;
 	private Graphics2D myBuffer;
 	private Timer t1, t2;
@@ -53,7 +53,7 @@ public class Panel13 extends JPanel {
 			xPos = xPos +5;
 			if(xPos >= 200) {
 				myBuffer.setFont(new Font("Monospaced", Font.BOLD, 24));
-				myBuffer.drawString("Who wrote this Joke", 300, 150);
+				myBuffer.drawString("Hello!!", 300, 150);
 				myBuffer.drawOval(250,  80, 400, 100);
 				repaint();
 				t1.stop();
@@ -69,7 +69,7 @@ public class Panel13 extends JPanel {
 		public void actionPerformed(ActionEvent e) {
 			t2.stop();
 			myBuffer.setFont(new Font("Monospaced", Font.BOLD, 24));
-			myBuffer.drawString("ur Mom", 320, 250);
+			myBuffer.drawString("No U", 320, 250);
 			myBuffer.drawOval(280, 190, 400, 130);
 			repaint();
 			

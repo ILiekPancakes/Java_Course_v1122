@@ -7,7 +7,7 @@ package Lab08;
       public static void main(String[] args)
       {
     	  JFrame frame = new JFrame("Flower Turtles");
-          frame.setSize(400, 400);
+          frame.setSize(700, 700);
           frame.setLocation(200, 100);
           frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           frame.setContentPane(new Lab06.TurtlePanel());
@@ -15,9 +15,20 @@ package Lab08;
           
           Turtle.clear(Color.white);
           
-          Turtle.setCrawl(true);
+          FlowerTurtle flowerturtle1 = new FlowerTurtle(100, 45, Color.red);
+          FlowerTurtle flowerturtle2 = new FlowerTurtle(250, 45, Color.yellow);
+          FlowerTurtle flowerturtle3 = new FlowerTurtle(400, 45, Color.blue);
+          FlowerTurtle flowerturtle4 = new FlowerTurtle(550, 45, Color.black);
           
-          FlowerTurtle lisa = new FlowerTurtle(100, 25, Color.blue);
-          lisa.drawShape();
+          Thread t1 = new Thread( flowerturtle1 );
+          Thread t2 = new Thread( flowerturtle2 );
+          Thread t3 = new Thread( flowerturtle3 );
+          Thread t4 = new Thread( flowerturtle4 );
+          
+          t1.start();
+          t2.start();
+          t3.start();
+          t4.start();
+
       }
    }

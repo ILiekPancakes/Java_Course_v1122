@@ -1,13 +1,14 @@
 package Lab08;
    import edu.fcps.Turtle;
    import java.awt.Color;
-   public class FlowerTurtle extends Turtle
+   public class FlowerTurtle extends Turtle implements Runnable
    {
       private double mySize;
       private Color myColor;
+      
       public FlowerTurtle()
       {
-         mySize = 50.0;
+         mySize = 10.0;
          myColor = Color.RED;
       }
       public FlowerTurtle(double x, double n, Color c)
@@ -30,38 +31,41 @@ package Lab08;
          super.setColor(myColor);
          double interiorAngle = 360/30;
          
-         for(int i=0; i<30; i++) {
+         for(int i=1; i<=30; i++) {
         	 forward(mySize);
         	 turnLeft(180);
         	 forward(mySize);
-        	 turnLeft(180+interiorAngle);
+          turnLeft(180);
+        	 turnLeft(interiorAngle);
          }
          
       
       }
       private void drawStem() //starts at top of stem facing south, ends at bottom
       {
-    	  this.turnLeft(180);
-    	  this.forward(mySize * 1);
     	  setColor(Color.green);
-    	  super.setColor(myColor);
-    	  this.forward(mySize * 1.5);    	  
+    	  super.setColor(myColor);  	  
     	  this.turnLeft(180);
-    	  this.forward(mySize * 0.5);
-    	  this.turnLeft(45);
-    	  this.forward(mySize * 0.5);
+    	  this.forward(mySize * 3);
     	  this.turnLeft(180);
-    	  this.forward(mySize * 0.5);
-    	  this.turnLeft(90);
-    	  this.forward(mySize * 1);
+    	  this.forward(mySize / 3);
+    	  this.turnLeft(60);
+    	  this.forward(mySize / 2);
     	  this.turnLeft(180);
-    	  this.forward(mySize * 1);
-    	  this.turnRight(135);
-    	  this.forward(mySize * 1);
+    	  this.forward(mySize / 2);
+    	  this.turnLeft(60);
+        this.turnLeft(15);
+    	  this.forward(mySize / 1.2);
+    	  this.turnRight(180);
+    	  this.forward(mySize / 1.2);
       }
       public void drawShape()
       {
          drawPetals();
          drawStem();
+      }
+      
+      public void run() {
+      drawShape();
       }
    }
